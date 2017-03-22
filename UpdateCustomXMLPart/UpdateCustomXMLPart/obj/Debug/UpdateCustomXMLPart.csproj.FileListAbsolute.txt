@@ -1,0 +1,8 @@
+C:\Users\ajones\Documents\Automation\Excel Automation\Code\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\UpdateCustomXMLPart.exe.config
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\UpdateCustomXMLPart.exe.config
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\UpdateCustomXMLPart.exe
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\UpdateCustomXMLPart.pdb
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\obj\Debug\UpdateCustomXMLPart.exe
+C:\Users\ajones\Documents\Visual Studio 2015\Projects\UpdateCustomXMLPart\UpdateCustomXMLPart\obj\Debug\UpdateCustomXMLPart.pdb
