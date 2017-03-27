@@ -10,6 +10,8 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Wordprocessing;
 
 using System.IO;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace UpdateCustomXMLPart
 {
@@ -29,31 +31,43 @@ namespace UpdateCustomXMLPart
 
                 foreach (CustomXmlPart currCXP in SSLMain.CustomXmlParts)
                 {
-                    Console.WriteLine("Uri: {0}", currCXP.Uri.ToString());
-                    Console.WriteLine("Child Part (CustomXmlProperties) Uri: {0}", currCXP.CustomXmlPropertiesPart.Uri.ToString());
-                    Console.WriteLine("Child Part (Relationship) {0}", currCXP.RelationshipType);
+                    Console.WriteLine("Custom XML Part Uri: {0}", currCXP.Uri.ToString());
+                    Console.WriteLine("Custom XML Part Child Part (CustomXmlProperties) Uri: {0}", currCXP.CustomXmlPropertiesPart.Uri.ToString());
+                    Console.WriteLine("Custom XML Part Child Part (Relationship) {0}", currCXP.RelationshipType);
                     Console.WriteLine("DataStoreItem: {0}", currCXP.CustomXmlPropertiesPart.DataStoreItem.ItemId);
                     Console.WriteLine();
 
-                    /* Get the stream of the XML File sample 
-                     * THIS WORKS!!!!
-                     */
-                    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                    StreamReader strdXML = new StreamReader(strFULLPATH_SSL_XML_SAMPLE);
-                    currCXP.FeedData(strdXML.BaseStream);
-                    //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    //Read the XML from the Custom Part by using its uri
+                    XDocument CM_CustomXML = new XDocument();
+                    CM_CustomXML = XDocument.Load(currCXP.GetStream());
+
+                    XElement CM_RootCustomXML = new XElement(CM_CustomXML.Root);
 
 
-                    /* This just points out that the CustomXmlPropertiesPart exists I can get this without cycling
-                     * through the custom xml part's parts
-                    foreach (IdPartPair ipp in currCXP.Parts)
+                    if (CM_RootCustomXML.Name.LocalName != string.Empty) //Logic here for determining what "type" of custom xml file this is
                     {
-                        Console.WriteLine("Part 1 Found {0}", ipp.OpenXmlPart.Uri.ToString());
+                        Console.WriteLine("The Name of the Root ==> {0}", CM_RootCustomXML.Name.LocalName);
                     }
-                    */
+
+                        /* Get the stream of the XML File sample 
+                         * THIS WORKS!!!!
+                         */
+                        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        //StreamReader strdXML = new StreamReader(strFULLPATH_SSL_XML_SAMPLE);
+                        //currCXP.FeedData(strdXML.BaseStream);
+                        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+                        /* This just points out that the CustomXmlPropertiesPart exists I can get this without cycling
+                         * through the custom xml part's parts
+                        foreach (IdPartPair ipp in currCXP.Parts)
+                        {
+                            Console.WriteLine("Part 1 Found {0}", ipp.OpenXmlPart.Uri.ToString());
+                        }
+                        */
                 }
                 Console.ReadLine();
-                SSLDoc.MainDocumentPart.Document.Save();
+                //SSLDoc.MainDocumentPart.Document.Save();
 
 
                 /* 
