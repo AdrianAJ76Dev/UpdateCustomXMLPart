@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Fee_Schedule>
+  <Product1>
+    <ProductName>Segment Analysis Service™™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>17325</TotalCost>
+  </Product1>
+  <Product2>
+    <ProductName>Enrollment Planning Service™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>7376</TotalCost>
+  </Product2>
+  <Product3>
+    <ProductName>Segment Analysis Service™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>17325</TotalCost>
+  </Product3>
+  <Product4>
+    <ProductName>Enrollment Planning Service™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>7376</TotalCost>
+  </Product4>
+  <Product5>
+    <ProductName>Segment Analysis Service™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>17325</TotalCost>
+  </Product5>
+  <Product6>
+    <ProductName>Enrollment Planning Service™ - Unlimited Subscription</ProductName>
+    <Quantity>1</Quantity>
+    <TotalCost>7376</TotalCost>
+  </Product6>
+  <GrandTotal>74471</GrandTotal>
+</Fee_Schedule>

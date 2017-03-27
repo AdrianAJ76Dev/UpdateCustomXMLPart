@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SoleSourceLetter xmlns="https://www.collegeboard.org/ContractsManagement/SSL" InfoType="ContactInfo">
+  <CreateDate />
+  <Institution />
+  <!--To whom this letter is going to or the person at the institution that requested it.-->
+  <ContactPrimary>
+    <FirstName />
+    <LastName />
+    <Title />
+    <Address />
+    <City />
+    <State />
+    <ZipCode />
+  </ContactPrimary>
+  <!--This will either be 'HED' or 'K12' and possibly 'Price Warranty'-->
+  <SSLType />
+  <Signatory />
+</SoleSourceLetter>
