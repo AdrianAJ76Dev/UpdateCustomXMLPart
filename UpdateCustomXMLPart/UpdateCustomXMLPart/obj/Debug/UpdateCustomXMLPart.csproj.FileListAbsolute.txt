@@ -13,3 +13,4 @@ C:\Users\ajones\Source\Repos\UpdateCustomXMLPart\UpdateCustomXMLPart\UpdateCusto
 C:\Users\ajones\Source\Repos\UpdateCustomXMLPart\UpdateCustomXMLPart\UpdateCustomXMLPart\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\ajones\Source\Repos\UpdateCustomXMLPart\UpdateCustomXMLPart\UpdateCustomXMLPart\obj\Debug\UpdateCustomXMLPart.exe
 C:\Users\ajones\Source\Repos\UpdateCustomXMLPart\UpdateCustomXMLPart\UpdateCustomXMLPart\obj\Debug\UpdateCustomXMLPart.pdb
+C:\Users\ajones\Source\Repos\UpdateCustomXMLPart\UpdateCustomXMLPart\UpdateCustomXMLPart\obj\Debug\UpdateCustomXMLPart.csprojResolveAssemblyReference.cache

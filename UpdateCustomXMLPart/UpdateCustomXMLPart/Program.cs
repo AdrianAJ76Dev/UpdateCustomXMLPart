@@ -10,8 +10,14 @@ namespace UpdateCustomXMLPart
     {
         static void Main(string[] args)
         {
+            /* Sole Source Test
             CMDocument SSLTestDoc = new CMDocument();
             SSLTestDoc.UpdateSSLContactInfo();
+            */
+
+            CMDocument CBContract = new CMDocument();
+            // CBContract.AddCustomXMLPart();
+            CBContract.DisplayCustomXMLPartInfo();
         }
     }
 }
